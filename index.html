@@ -16,8 +16,8 @@
 <script>document.getElementById('year').textContent=new Date().getFullYear();const CONTACT_EMAIL='silasduerst@gmail.com';document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const note=document.getElementById('formNote');if(CONTACT_EMAIL==='DEINE-EMAIL@BEISPIEL.CH'){note.textContent='Die Kontakt-E-Mail muss vor der Veröffentlichung noch im HTML-Code eingetragen werden.';return;}const n=document.getElementById('name').value,mail=document.getElementById('email').value,msg=document.getElementById('message').value;location.href='mailto:'+CONTACT_EMAIL+'?subject='+encodeURIComponent('IT-Support Anfrage von '+n)+'&body='+encodeURIComponent('Name: '+n+'\nE-Mail: '+mail+'\n\nProblem:\n'+msg);note.textContent='Dein E-Mail-Programm sollte sich jetzt öffnen.';});</script>
 <script>
 /* ===== Bewertungen (Supabase) – hier deine Werte eintragen ===== */
-const SUPABASE_URL='https://DEIN-PROJEKT.supabase.co';
-const SUPABASE_KEY='DEIN-ANON-PUBLIC-KEY';
+const SUPABASE_URL='https://oqxgciohfntcsqeubgtu.supabase.co';
+const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9xeGdjaW9oZm50Y3NxZXViZ3R1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTUyNTc4NzUsImV4cCI6MjExMDgzMzg3NX0.w8mE_ds_D0Cc4_pWbg5jNjaijI8pwDkaRKbonNYtcAg';
 /* =============================================================== */
 (function(){
 const configured=!SUPABASE_URL.includes('DEIN-PROJEKT')&&!SUPABASE_KEY.includes('DEIN-');
